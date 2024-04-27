@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jbdc:postgresql://localhost:6001/spring-2024
+    username: postgres
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  sql:
+    init:
+      mode: always
